@@ -1,62 +1,68 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Curriculum Vitae</title>
+    <title>Curriculum Vitae - Josue Madrid (v3)</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <img
-      src="FotoRigo.jpeg"
-      alt="Fotografía de Josue Madrid"
-      class="foto-perfil"
-    />
-    <h1>JOSUE RIGOBERTO MADRID RIVERA</h1>
-    <p>
-      San Francisco de Yojoa, Cortés Honduras | (504) 8974-9956 |
-      josuermr@gmail.com
-    </p>
-    <br />
-    <h2>Skills</h2>
-    <ul>
-      <li>Frontend: HTML, CSS, TypeScript</li>
-      <li>Backend: Node.js</li>
-      <li>Database: SQL, PostgreSQL, MongoDB</li>
-      <li>Frameworks: React</li>
-      <li>Other: Docker</li>
-      <li>Version Control: GitHub, Git</li>
-    </ul>
 
-    <h2>Education</h2>
-    <ul>
-      <li>
-        3 years Students on Computer Science at Universidad Tecnologica
-        International Centroamericana (UNITEC).
-      </li>
-      <li>Tecnico en Informatica en el Instituto Dr. Jorge Fidel Durón</li>
-    </ul>
-    <h3>Projects Worked On</h3>
-    <ul>
-      <li>
-        <strong>Project Name:</strong> Gamification
-        <br />
-        <strong>Description:</strong> Juego sobre 6 mundos diferentes cada uno
-        con minujuegos, proyecto basado en la filosofia.
-      </li>
-      <li>
-        <strong>Project Name:</strong> Mini Windows
-        <br />
-        <strong>Description:</strong> Proyecto basado en un sistema operativo,
-        con diferentes aplicaciones y funcionalidades.
-      </li>
-      <li>
-        <strong>Project Name:</strong> Habit Tracker
-        <br />
-        <strong>Description:</strong> Aplicación web para el seguimiento de
-        hábitos, permitiendo a los usuarios establecer metas y monitorear su
-        progreso diario.
-      </li>
-    </ul>
+    <header class="cv-header">
+      <img
+        src="FotoRigo.jpeg"
+        alt="Fotografía de Josue Madrid"
+        class="foto-perfil"
+      />
+      <h1>JOSUE RIGOBERTO MADRID RIVERA</h1>
+      <p class="contacto-sub">
+        San Francisco de Yojoa, Cortés Honduras | (504) 8974-9956 | josuermr@gmail.com
+      </p>
+    </header>
+
+    <main>
+
+      <section class="cv-section">
+        <h2>Skills</h2>
+        <div class="skills-container">
+          <div class="skill-group"><strong>Frontend:</strong> <span class="tag">HTML</span> <span class="tag">CSS</span> <span class="tag">TypeScript</span></div>
+          <div class="skill-group"><strong>Backend:</strong> <span class="tag">Node.js</span></div>
+          <div class="skill-group"><strong>Database:</strong> <span class="tag">SQL</span> <span class="tag">PostgreSQL</span> <span class="tag">MongoDB</span></div>
+          <div class="skill-group"><strong>Frameworks:</strong> <span class="tag">React</span></div>
+          <div class="skill-group"><strong>Other:</strong> <span class="tag">Docker</span></div>
+          <div class="skill-group"><strong>Version Control:</strong> <span class="tag">GitHub</span> <span class="tag">Git</span></div>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Education</h2>
+        <ul class="edu-list">
+          <li>
+            3 years Students on Computer Science at Universidad Tecnologica
+            International Centroamericana (UNITEC).
+          </li>
+          <li>Tecnico en Informatica en el Instituto Dr. Jorge Fidel Durón</li>
+        </ul>
+      </section>
+
+      <section class="cv-section">
+        <h2>Projects Worked On</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <h3>Gamification</h3>
+            <p>Juego sobre 6 mundos diferentes cada uno con minujuegos, proyecto basado en la filosofia.</p>
+          </div>
+          <div class="project-card">
+            <h3>Mini Windows</h3>
+            <p>Proyecto basado en un sistema operativo, con diferentes aplicaciones y functionalities.</p>
+          </div>
+          <div class="project-card">
+            <h3>Habit Tracker</h3>
+            <p>Aplicación web para el seguimiento de hábitos, permitiendo a los usuarios establecer metas y monitorear su progreso diario.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
   </body>
 </html>
